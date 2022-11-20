@@ -6,7 +6,6 @@ name varchar(255) NOT NULL,
 phoneNo  BIGSERIAL NOT NULL,
 address varchar(255) NOT NULL,
 role int NOT NULL,
-
 );
 CREATE TABLE  users(
   id SERIAL NOT NULL PRIMARY KEY ,
@@ -25,5 +24,4 @@ CREATE TABLE  Entry(
   status int NOT NULL,
 CONSTRAINT entry_book FOREIGN KEY(book_id ) REFERENCES book_details(id),
 CONSTRAINT entry_user FOREIGN KEY(user_Id) REFERENCES users(id)
-
 );
